@@ -20,9 +20,65 @@
   </head>
   <body>
     <div class="container">
-      <div class="flex">
-        <div class="col"></div>
+      <div class="flexx">
+        <div class="desktop-bg">
+          <div class="front">
+            <img src="./style/images/card-logo.svg" alt="" />
+            <h2 id="number"></h2>
+            <div class="flex">
+              <p id="name"></p>
+              <p><span id="month">00</span>/<span id="year">00</span></p>
+            </div>
+          </div>
+          <div class="back"><p>000</p></div>
+        </div>
+        <div class="col">
+          <form>
+            <div>
+              <label for="name">CARDHOLDER NAME</label>
+              <input
+                class="form-control name-input"
+                type="text"
+                placeholder="e.g. Adelana Agun"
+              />
+            </div>
+            <div>
+              <label>CARD NUMBER</label>
+              <input
+                class="form-control number-input"
+                type="number"
+                placeholder="e.g. 1234 5678 9123 0000"
+              />
+            </div>
+            <div>
+              <div class="flex">
+                <label> EXP. DATE (MM/YY) </label> <label> CVC </label>
+              </div>
+              <div class="flex">
+                <div class="flex">
+                  <input
+                    class="form-control number-month"
+                    type="number"
+                    placeholder="MM"
+                  />
+                  <input
+                    class="form-control number-year"
+                    type="number"
+                    placeholder="YY"
+                  />
+                </div>
+                <input
+                  class="form-control"
+                  type="number"
+                  placeholder="e.g.123"
+                />
+              </div>
+            </div>
+            <button class="form-control">Confirm</button>
+          </form>
+        </div>
       </div>
     </div>
+    <script src="./style/card.js"></script>
   </body>
 </html>
