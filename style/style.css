@@ -16,7 +16,7 @@ html {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 334px) {
   html {
     font-size: 50%;
   }
@@ -169,6 +169,7 @@ img {
   margin: 1.8rem;
 }
 
+.btn,
 .form-control {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -189,23 +190,28 @@ img {
   width: 100%;
 }
 
+.btn::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
   font-size: 1.4rem;
 }
 
+.btn:-ms-input-placeholder,
 .form-control:-ms-input-placeholder {
   font-size: 1.4rem;
 }
 
+.btn::-ms-input-placeholder,
 .form-control::-ms-input-placeholder {
   font-size: 1.4rem;
 }
 
+.btn::placeholder,
 .form-control::placeholder {
   font-size: 1.4rem;
 }
 
-button.form-control {
+button.form-control,
+.btn {
   background: #220930;
   color: #fff;
 }

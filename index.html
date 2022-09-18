@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="col">
-          <form>
+          <form id="form">
             <div>
               <label for="name">CARDHOLDER NAME</label>
               <input
@@ -49,10 +49,9 @@
               <label>CARD NUMBER</label>
               <input
                 class="form-control number-input"
-                type="number"
-                max="0"
-                min="0"
+                type="text"
                 placeholder="e.g. 1234 5678 9123 0000"
+                maxlength="16"
               />
               <div id="error-number"></div>
             </div>
@@ -63,17 +62,15 @@
                 <div class="flex">
                   <input
                     class="form-control number-month"
-                    type="number"
+                    type="text"
                     placeholder="MM"
-                    max="0"
-                    min="0"
+                    maxlength="2"
                   />
                   <input
                     class="form-control number-year"
-                    type="number"
+                    type="text"
                     placeholder="YY"
-                    max="0"
-                    min="0"
+                    maxlength="2"
                   />
                 </div>
                 <div id="error-date"></div>
@@ -82,19 +79,20 @@
                 <label> CVC </label>
                 <input
                   class="form-control number-cvc"
-                  type="number"
+                  type="text"
                   placeholder="e.g.123"
                   max="0"
                   min="0"
+                  maxlength="3"
                 />
                 <div id="error-cvc"></div>
               </div>
             </div>
-            <button class="form-control btn-submit">Confirm</button>
+            <button type="submit" class="btn-submit btn">Confirm</button>
           </form>
         </div>
       </div>
     </div>
-    <script src="./style/card.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

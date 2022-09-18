@@ -10,7 +10,7 @@ html {
   @media (min-width: 1900px) {
     font-size: 100%;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 334px) {
     font-size: 50%;
   }
 }
@@ -118,6 +118,7 @@ img {
   width: 7rem;
   margin: 1.8rem;
 }
+.btn,
 .form-control {
   -webkit-appearance: none;
   appearance: none;
@@ -136,7 +137,8 @@ img {
     font-size: 1.4rem;
   }
 }
-button.form-control {
+button.form-control,
+.btn {
   background: #220930;
   color: #fff;
 }
